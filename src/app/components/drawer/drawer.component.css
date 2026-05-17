@@ -1,0 +1,121 @@
+::ng-deep .ytb-leftDrawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  z-index: 999;
+}
+::ng-deep .ytb-leftDrawer__container {
+  width: 250px;
+  height: 100%;
+  padding-top: 82px !important;
+  background-color: #ffffff;
+  padding: 20px;
+  z-index: 999;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+  height: 100%;
+  overflow-y: auto;
+}
+::ng-deep .ytb-leftDrawer.open .ytb-leftDrawer__container {
+  transform: none !important;
+}
+
+.ytb-shortcut__item {
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 400;
+}
+.ytb-shortcut__item.active {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-weight: 700;
+}
+.ytb-shortcut__item:last-child {
+  margin-bottom: 4px;
+}
+.ytb-shortcut .icon {
+  margin-right: 10px;
+}
+
+.ytb-subscription__item {
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.ytb-subscription__item:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.ytb-subscription .icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ytb-youList--head h2 {
+  font-size: 20px;
+}
+.ytb-youList__item {
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.ytb-youList__item:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.ytb-youList .icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #3ea6ff;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.showItems-btn {
+  padding: 10px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.showItems-btn i {
+  margin-right: 10px;
+}
+
+.divider {
+  position: relative;
+}
+.divider::after {
+  position: absolute;
+  content: "";
+  width: calc(100% + 40px);
+  left: -20px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.ytb-term {
+  color: rgb(96, 96, 96);
+}
+
+.ytb-gllc {
+  color: rgb(144, 144, 144);
+}
+/*# sourceMappingURL=drawer.component.css.map */

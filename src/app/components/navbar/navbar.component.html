@@ -1,0 +1,52 @@
+<header class="sticky-header">
+    <div class="conatiner-fluid">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3">
+                <div class="sidenav-btn d-flex align-items-center">
+                    <div class="sidenav-btn__icon d-flex align-items-center justify-content-center me-3" (click)="openMenu()">
+                        <i class="pi pi-bars" ></i>
+                    </div>
+                    
+                    <div class="logo d-inline-flex align-items-center">
+                        <!-- YouTube SVG -->
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="red">
+                            <path
+                                d="M23.498 6.186a2.955 2.955 0 0 0-2.078-2.09C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.42.596A2.955 2.955 0 0 0 .502 6.186 30.89 30.89 0 0 0 0 12a30.89 30.89 0 0 0 .502 5.814 2.955 2.955 0 0 0 2.078 2.09C4.5 20.5 12 20.5 12 20.5s7.5 0 9.42-.596a2.955 2.955 0 0 0 2.078-2.09A30.89 30.89 0 0 0 24 12a30.89 30.89 0 0 0-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                        </svg>
+
+                        <!-- Name -->
+                        <span class="logo-text d-none d-md-inline-block fw-regular clr-black00">&nbsp;YouTube</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5 d-flex align-items-center">
+                <div class="youtube-search w-100 d-none d-md-block">
+                    <input type="text" placeholder="Search" />
+                    <button>
+                        <i class="pi pi-search"></i>
+                    </button>
+                </div>
+                <div class="ytb-speak ms-3 d-none d-md-inline-flex">
+                    <i class="pi pi-microphone"></i>
+                </div>
+            </div>
+
+            <div class="col-3 d-flex justify-content-end align-items-center">
+                <div class="ytb-createNew d-none d-md-inline-block">
+                    <button class="d-inline-flex align-items-center">
+                        <i class="pi pi-plus me-1"></i>
+                        <span class="f-14 clr-black00 fw-medium">Create</span>
+                    </button>
+                </div>
+                 <div class="ytb-Notification d-none d-md-inline-block ms-4">
+                   <i class="pi pi-bell"></i>
+                   <span class="ytb-Notification__count bg-red2d clr-white">+9</span>
+                </div>
+                <div class="ytb-userAvatr ms-4">
+                    <img src="../../../assets/profiles/usr.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

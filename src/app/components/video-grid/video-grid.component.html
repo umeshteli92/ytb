@@ -1,0 +1,131 @@
+<div class="row">
+
+    <div class="filter-bar mb-4 justify-content-between d-flex">
+
+  <button (click)="filterVideos('all')"
+          [class.active]="selectedType === 'all'">
+    All
+  </button>
+
+  <button (click)="filterVideos('cars')"
+          [class.active]="selectedType === 'cars'">
+    Cars
+  </button>
+
+  <button (click)="filterVideos('tech')"
+          [class.active]="selectedType === 'tech'">
+    Tech
+  </button>
+
+  <button (click)="filterVideos('music')"
+          [class.active]="selectedType === 'music'">
+    Music
+  </button>
+  <button (click)="filterVideos('all')"
+          [class.active]="selectedType === 'all'">
+    All
+  </button>
+
+  <button (click)="filterVideos('cars')"
+          [class.active]="selectedType === 'cars'">
+    Cars
+  </button>
+
+  <button (click)="filterVideos('tech')"
+          [class.active]="selectedType === 'tech'">
+    Tech
+  </button>
+
+  <button (click)="filterVideos('music')"
+          [class.active]="selectedType === 'music'">
+    Music
+  </button>
+  <button (click)="filterVideos('all')"
+          [class.active]="selectedType === 'all'">
+    All
+  </button>
+
+  <button (click)="filterVideos('cars')"
+          [class.active]="selectedType === 'cars'">
+    Cars
+  </button>
+
+  <button (click)="filterVideos('tech')"
+          [class.active]="selectedType === 'tech'">
+    Tech
+  </button>
+
+  <button (click)="filterVideos('music')"
+          [class.active]="selectedType === 'music'">
+    Music
+  </button>
+  <button (click)="filterVideos('all')"
+          [class.active]="selectedType === 'all'">
+    All
+  </button>
+
+  <button (click)="filterVideos('cars')"
+          [class.active]="selectedType === 'cars'">
+    Cars
+  </button>
+
+  <button (click)="filterVideos('tech')"
+          [class.active]="selectedType === 'tech'">
+    Tech
+  </button>
+
+  <button (click)="filterVideos('music')"
+          [class.active]="selectedType === 'music'">
+    Music
+  </button>
+  <button (click)="filterVideos('all')"
+          [class.active]="selectedType === 'all'">
+    All
+  </button>
+
+  <button (click)="filterVideos('cars')"
+          [class.active]="selectedType === 'cars'">
+    Cars
+  </button>
+
+  <button (click)="filterVideos('tech')"
+          [class.active]="selectedType === 'tech'">
+    Tech
+  </button>
+
+  <button (click)="filterVideos('music')"
+          [class.active]="selectedType === 'music'">
+    Music
+  </button>
+
+
+
+
+</div>
+  <div class="col-12 col-md-4" *ngFor="let video of filteredVideos">
+
+    <div class="video-card">
+
+      <iframe
+        class="video-frame"
+        [src]="video.url"
+        allowfullscreen>
+      </iframe>
+
+      <div class="video-info">
+
+        <img class="channel-avatar" [src]="video.channelImg" />
+
+        <div class="text">
+          <h3 class="title">{{ video.title }}</h3>
+          <p class="channel">{{ video.channel }}</p>
+          <p class="meta">{{ video.views }}</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

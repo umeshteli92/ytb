@@ -1,0 +1,68 @@
+@if (_visible) {
+<div class="ytb-leftDrawer" [class.open]="_visible">
+  <div class="ytb-leftDrawer__container">
+    <div class="ytb-shortcut mb-4 divider">
+      @for (item of shortcuts; track item.label) {
+      <a class="ytb-shortcut__item d-flex align-items-center" [class.active]="item.isActive" href="#">
+        <i class="icon" [class]="item.icon"></i>
+        <span class="f-14">{{ item.label }}</span>
+      </a>
+      }
+    </div>
+   
+
+    <div class="ytb-subscription mb-4 divider">
+      @for (item of visibleItems; track item.label) {
+      <a class="ytb-subscription__item d-flex align-items-center" href="#">
+        <img class="icon" [src]="item.icon" alt="icon">
+        <span class="f-14">{{ item.label }}</span>
+      </a>
+      }
+
+      <button (click)="toggleItems()" class="showItems-btn">
+        <i class="pi" [class.pi-angle-up]="showAll" [class.pi-angle-down]="!showAll">
+        </i>
+        {{ showAll ? 'Show Less' : 'Show More' }}
+      </button>
+    </div>
+
+
+
+    <div class="ytb-youList mb-4 divider">
+      <h2 class="f-16 fw-medium">You</h2>
+      @for (item of youList; track item.label) {
+      <a class="ytb-youList__item d-flex align-items-center" href="#">
+        <i class="icon" [class]="item.icon"></i>
+        <span class="f-14">{{ item.label }}</span>
+      </a>
+      }
+    </div>
+
+
+
+    <div class="ytb-youList mb-4 divider">
+      <h2 class="f-16 fw-medium">Explore</h2>
+      @for (item of visibleExploreItems; track item.label) {
+      <a class="ytb-youList__item d-flex align-items-center" href="#">
+        <i class="icon" [class]="item.icon"></i>
+        <span class="f-14">{{ item.label }}</span>
+      </a>
+      }
+
+      <button (click)="toggleExploreItems()" class="showItems-btn">
+        <i class="pi" [class.pi-angle-up]="showAllExplore" [class.pi-angle-down]="!showAllExplore">
+        </i>
+        {{ showAllExplore ? 'Show Less' : 'Show More' }}
+      </button>
+    </div>
+     <a class="ytb-term f-13 mb-4 d-block" href="#">
+    TermsPrivacyPolicy & SafetyHow YouTube worksTest new features
+  </a>
+  <span class="f-12 ytb-gllc d-block">© 2026 Google LLC</span>
+
+  </div>
+
+ 
+
+</div>
+}

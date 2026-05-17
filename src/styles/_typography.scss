@@ -1,0 +1,84 @@
+@import './variables';
+
+/* Body text */
+body {
+  font-family: $font-primary;
+  font-size: $font-size-md;
+  color: $color-text;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000000 !important;
+}
+
+/* Headings */
+h1 {
+  font-size: $font-size-xxl;
+  font-weight: $font-bold;
+  color: $color-primary;
+}
+
+h2 {
+  font-size: $font-size-xl;
+  font-weight: $font-semibold;
+}
+
+
+.fw-light {
+  font-weight: $font-light;
+}
+
+.fw-regular {
+  font-weight: $font-regular;
+}
+
+.fw-medium {
+  font-weight: $font-medium;
+}
+
+.fw-semibold {
+  font-weight: $font-semibold;
+}
+
+.fw-bold {
+  font-weight: $font-bold;
+}
+
+
+.f-14 {
+  font-size: 14px !important;
+  line-height: 20px;
+}
+
+.f-13{
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.f-12{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+
+.f-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.clr-black00 {
+  color: $black00;
+}
+
+.clr-white {
+  color: $white;
+}
+
+.bg-red2d {
+  background-color: $red2d;
+}
+
+.bg-white {
+  background-color: $white;
+}
