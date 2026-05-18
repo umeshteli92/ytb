@@ -1,32 +1,28 @@
 ::ng-deep .ytb-leftDrawer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100vh;
-    z-index: 999;
+    position         : fixed;
+    top              : 0;
+    left             : 0;
+    width            : 100%;
+    height           : 100%;
+    background-color : rgba(0, 0, 0, 0.4);
+    height           : 100vh;
+    z-index          : 999;
    
-
-   
-
     &__container {
-        width: 250px;
-        height: 100%;
-         padding-top: 82px !important;
+        width           : 250px;
+        height          : 100%;
+        padding-top     : 82px !important;
         background-color: #ffffff;
-        padding: 20px;
-        z-index: 999;
-        transform: translateX(-100%);
-        transition: 0.3s ease-in-out;
-        height: 100%;
-        overflow-y: auto;
+        padding         : 20px;
+        z-index         : 999;
+        transform       : translateX(-100%);
+        transition      : 0.3s ease-in-out;
+        height          : 100%;
+        overflow-y      : auto;
     }
     &.open {
-       
         .ytb-leftDrawer__container {
-            transform: none !important;
+            transform   : none !important;
         }
     }
 }
@@ -34,19 +30,18 @@
 .ytb-shortcut {
     
     &__item {
-        padding: 10px;
+        padding      : 10px;
         border-radius: 12px;
-        font-weight: 400;
+        font-weight  : 400;
 
         &.active {
             background-color: rgba($color: #000000, $alpha: 0.08);
-            font-weight: 700;
+            font-weight     : 700;
         }
 
         &:last-child {
             margin-bottom: 4px;
         }
-       
     }
 
     .icon {
@@ -55,32 +50,28 @@
 }
 
 
-
 .ytb-subscription {
 
     &__item {
-         padding: 10px;
+        padding      : 10px;
         border-radius: 12px;
-        font-weight: 400;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
+        font-weight  : 400;
+        transition   : 0.3s ease-in-out;
+        cursor       :  pointer;
 
         &:hover {
              background-color: rgba($color: #000000, $alpha: 0.08);
         }
     }
     .icon {
-         margin-right: 10px;
-  width: 16px;
-  height: 16px;
- 
-  object-fit: cover;
+        margin-right: 10px;
+        width       : 16px;
+        height      : 16px;
+        object-fit  : cover;
+    }
 }
-}
-
 
 .ytb-youList {
-
     &--head {
         h2 {
             font-size: 20px;
@@ -88,39 +79,39 @@
     }
 
     &__item {
-         padding: 10px;
+        padding      : 10px;
         border-radius: 12px;
-        font-weight: 400;
-        transition: 0.3s ease-in-out;
-        cursor: pointer;
+        font-weight  : 400;
+        transition   : 0.3s ease-in-out;
+        cursor       : pointer;
 
         &:hover {
              background-color: rgba($color: #000000, $alpha: 0.08);
         }
     }
+
     .icon {
-         margin-right: 10px;
-  width: 16px;
-  height: 16px;
- 
-  object-fit: cover;
-}
+        margin-right: 10px;
+        width       : 16px;
+        height      : 16px;
+        object-fit  : cover;
+    }
 }
 
 button {
-  background: none;
-  border: none;
-  color: #3ea6ff;
-  cursor: pointer;
-  padding: 8px 0;
+    background: none;
+    border    : none;
+    color     : #3ea6ff;
+    cursor    : pointer;
+    padding   : 8px 0;
 }
 
 .showItems-btn {
-      padding: 10px;
-    color: #000000;
-    font-size: 14px;
+    padding    : 10px;
+    color      : #000000;
+    font-size  : 14px;
     font-weight: 400;
-    display: flex;
+    display    : flex;
     align-items: center;
 
     i {
@@ -130,13 +121,14 @@ button {
 
 .divider {
     position: relative;
+
     &::after {
-        position: absolute;
-        content: "";
-        width: calc(100% + 40px);
-        left: -20px;
-        height: 1px;
-         background-color: rgba($color: #000000, $alpha: 0.08);
+        position        : absolute;
+        content         : "";
+        width           : calc(100% + 40px);
+        left            : -20px;
+        height          : 1px;
+        background-color: rgba($color: #000000, $alpha: 0.08);
     }
 }
 

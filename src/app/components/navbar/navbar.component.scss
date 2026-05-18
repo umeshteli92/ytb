@@ -1,10 +1,10 @@
 .sticky-header {
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1035;
+  padding         : 10px;
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  width           : 100%;
+  z-index         : 1035;
   background-color: #ffffff;
 
   @media (min-width: 768px) {
@@ -17,37 +17,37 @@
 }
 
 .youtube-search {
-  display: flex;
+  display        : flex;
   justify-content: space-between;
-  position: relative;
+  position       : relative;
 }
 
 .youtube-search input {
-  border: 1px solid #ccc;
-  border-right: none;
+  border       : 1px solid #ccc;
+  border-right : none;
   border-radius: 40px;
-  padding: 8px 80px 7px 20px;
-  width: 100%;
+  padding      : 8px 80px 7px 20px;
+  width        : 100%;
 }
 
 .youtube-search button {
-  border: 1px solid #ccc;
+  border       : 1px solid #ccc;
   border-radius: 0 40px 40px 0;
-  background: #f8f8f8;
-  padding: 10px 20px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
+  background   : #f8f8f8;
+  padding      : 10px 20px;
+  position     : absolute;
+  right        : 0;
+  top          : 0;
+  height       : 100%;
 }
 
 .ytb-speak {
-  width: 50px;
-  height: 40px;
-  border-radius: 50%;
-  background: #f8f8f8;
-  display: flex;
-  align-items: center;
+  width          : 50px;
+  height         : 40px;
+  border-radius  : 50%;
+  background     : #f8f8f8;
+  display        : flex;
+  align-items    : center;
   justify-content: center;
 
   i {
@@ -56,67 +56,63 @@
 }
 
 .ytb-createNew {
-    position: relative;
+  position: relative;
+
   button {
-    border: none;
-    outline: 0;
-    width: 95px;
-    padding: 10px;
-    background: #f8f8f8;
-    border-radius: 40px;
+  border       : none;
+  outline      : 0;
+  width        : 95px;
+  padding      : 10px;
+  background   : #f8f8f8;
+  border-radius: 40px;
   }
 }
 .sidenav-btn {
   
   &__icon {
-    width: 40px;
-      height: 40px;
-      cursor: pointer;
-      border-radius: 50%;
+    width        : 40px;
+    height       : 40px;
+    cursor       : pointer;
+    border-radius: 50%;
+
     &:hover {
-      
       background-color: rgba($color: #000000, $alpha: 0.08);
     }
   }
 }
 
-
 .ytb-Notification {
-    position: relative;
+    position     : relative;
     padding-right: 20px;
   
     .pi-bell {
         font-size: 20px;
     }
 
-      &__count {
-    position: absolute;
-    width: 25px;
-    height: 20px;
-   border-radius: 40px;
-   font-size: 12px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   top: -6px;
-   right: 1px
-  
-  }
-}
-
-.ytb-userAvatr {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit:cover ;
-       
-        background-repeat: no-repeat;
-       
-        border-radius: 50%;
+    &__count {
+      position       : absolute;
+      width          : 25px;
+      height         : 20px;
+      border-radius  : 40px;
+      font-size      : 12px;
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+      top            : -6px;
+      right          : 1px
     }
 }
 
+.ytb-userAvatr {
+  width        : 35px;
+  height       : 35px;
+  border-radius: 50%;
+
+  img {
+    width            : 100%;
+    height           : 100%;
+    object-fit       :cover ;
+    background-repeat: no-repeat;
+    border-radius    : 50%;
+  }
+}

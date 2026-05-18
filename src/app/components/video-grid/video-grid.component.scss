@@ -1,10 +1,8 @@
 .video-card {
-  
-    padding: 12px;
-    border-radius: 12px;
-   
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+  padding      : 12px;
+  border-radius: 12px;
+  cursor       : pointer;
+  transition   : 0.3s ease-in-out;
 
   &:hover {
     background-color: rgba(255, 192, 203, 0.5);
@@ -12,59 +10,59 @@
 }
 
 .thumbnail {
-  width: 100%;
+  width        : 100%;
   border-radius: 12px;
 }
 
 .video-info {
-  display: flex;
+  display   : flex;
   margin-top: 10px;
 }
 
 .channel-avatar {
-  width: 36px;
-  height: 36px;
+  width        : 36px;
+  height       : 36px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right : 10px;
 }
 
 .title {
-  font-size: 16px;
-  margin: 0;
+  font-size  : 16px;
+  margin     : 0;
   font-weight: bold;
 }
 
 .channel {
   font-size: 14px;
-  color: gray;
-  margin: 4px 0 0;
+  color    : gray;
+  margin   : 4px 0 0;
 }
 
 .meta {
   font-size: 12px;
-  color: gray;
+  color    : gray;
 }
 
 .video-frame {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
+  width        : 100%;
+  aspect-ratio : 16 / 9;
+  border       : none;
   border-radius: 12px;
 }
 
 .video-scroller {
-  height: 80vh; // required for virtual scroll
+  height: 80vh;
 }
 
 .filter-bar {
-    button {
-        background-color: none;
-        border: none;
-        outline: none;
-        width: auto;
-        padding: 5px 10px;
-        margin-left: 10px;
-        border-radius: 12px;
-        min-width: 50px;
-    }
+  button {
+    background-color: none;
+    border          : none;
+    outline         : none;
+    width           : auto;
+    padding         : 5px 10px;
+    margin-left     : 10px;
+    border-radius   : 12px;
+    min-width       : 50px;
+  }
 }
